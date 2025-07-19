@@ -16,15 +16,6 @@ return {
     opts = {},
   },
 
-  -- Smooth scrolling
-  {
-    "karb94/neoscroll.nvim",
-    event = "WinScrolled",
-    config = function()
-      require("neoscroll").setup()
-    end,
-  },
-
   -- UI selector
   {
     "stevearc/dressing.nvim",
