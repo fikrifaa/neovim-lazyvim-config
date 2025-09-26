@@ -11,9 +11,13 @@ return {
 
   -- Cursorword highlight
   {
-    "echasnovski/mini.cursorword",
+    "nvim-mini/mini.nvim",
+    version = false,
     event = "VeryLazy",
-    opts = {},
+    config = function()
+      require("mini.hipatterns").setup()
+      require("mini.cursorword").setup()
+    end,
   },
 
   -- UI selector
